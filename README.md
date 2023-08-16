@@ -1,12 +1,10 @@
 
 <h1 align="center">
   <br>
-  <a><img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/logo.png" width="200"></a>
-  <br>  
-  Supply-Chain
+  <a><img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/logo.png" width="500"></a>
+  <br>  Uniting Efficiency and Transparency.
   <br>
 </h1>
-<h3 align="center"><br>Enhancing Efficiency and Transparency through Blockchain</h3>
 <p align="center">
   <a href="https://github.com/trufflesuite/ganache-cli">
     <img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/ganachetrans.png" width="90">
@@ -108,9 +106,7 @@ The flow of functions in the smart contracts.
 
 <p align="center">
   <a>
-    <img src
-
-="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/sequencediagram.png?raw=true" width="1000">
+    <img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/sequencediagram.png?raw=true" width="1000">
   </a>
 </p>
 
