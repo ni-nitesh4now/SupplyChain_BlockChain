@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a><img src="https://github.com/rishav4101/eth-supplychain-dapp/blob/main/images/logo.png" width="200"></a>
+  <a><img src="https://www.seekpng.com/png/detail/352-3526452_supply-chain-management-sales-and-distribution-png.png" alt="Supply Chain Management - Sales And Distribution Png@seekpng.com"></a>
   <br>  
   Supply-Chain-Dapp
   <br>
@@ -9,10 +9,10 @@
 <p align="center">
   
   <a href="https://github.com/trufflesuite/ganache-cli">
-    <img src="https://github.com/rishav4101/eth-supplychain-dapp/blob/main/images/ganachetrans.png" width="90">
+    <img src="https://next-stack.github.io/docs/ganache/images/ganache-logo.png" width="90">
   </a>
   <a href="https://soliditylang.org/">
-    <img src="https://github.com/rishav4101/eth-supplychain-dapp/blob/main/images/Solidity.svg" width="80">       
+    <img src="https://imgs.search.brave.com/FAsqzoUOkbmb9RFu8iqtZrm6VCejd4OesdPlcyo12ds/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zb2xp/ZGl0eS5yZWFkdGhl/ZG9jcy5pby9lbi92/MC41LjEwL19pbWFn/ZXMvbG9nby5zdmc.svg" width="80">       
   </a>
   <a href="https://reactjs.org/"><img src="https://github.com/rishav4101/eth-supplychain-dapp/blob/main/images/react.png" width="80"></a>
   
