@@ -3,9 +3,8 @@
   <a><img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/logo.png" width="400"></a>
   <br>  
   Supply-Chain
-  <br>
 </h1>
-<h3  align="center"><br>Uniting Efficiency and Transparency<br></h3>
+<h3  align="center">Uniting Efficiency and Transparency<br></h3>
 <p align="center">
   
   <a href="https://github.com/trufflesuite/ganache-cli">
