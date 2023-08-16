@@ -2,8 +2,6 @@
 <h1 align="center">
   <br>
   <a><img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/logo.png" width="500"></a>
-  <br>  Uniting Efficiency and Transparency.
-  <br>
 </h1>
 <p align="center">
   <a href="https://github.com/trufflesuite/ganache-cli">
