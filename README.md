@@ -40,7 +40,6 @@
   <a href="#working">Working</a> •
   <a href="#contract-diagrams">Contract Diagrams</a> •
   <a href="#installation-and-setup">Installation and Setup</a> •
-  <a href="#license">License</a>
 </p>
 
 ## Description
