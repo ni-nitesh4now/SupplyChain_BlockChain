@@ -6,34 +6,6 @@
   <br>
 </h1>
 
-<p align="center">
-  
-  <a href="https://github.com/trufflesuite/ganache-cli">
-    <img src="https://next-stack.github.io/docs/ganache/images/ganache-logo.png" width="100">
-  </a>
-  <a href="https://soliditylang.org/">
-    <img src="https://imgs.search.brave.com/FAsqzoUOkbmb9RFu8iqtZrm6VCejd4OesdPlcyo12ds/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zb2xp/ZGl0eS5yZWFkdGhl/ZG9jcy5pby9lbi92/MC41LjEwL19pbWFn/ZXMvbG9nby5zdmc.svg" width="80">       
-  </a>
-  <a href="https://reactjs.org/"><img src="https://github.com/rishav4101/eth-supplychain-dapp/blob/main/images/react.png" width="80"></a>
-  
-  <a href="https://www.trufflesuite.com/">
-    <img src="https://github.com/rishav4101/eth-supplychain-dapp/blob/main/images/trufflenew.png" width="50">
-  </a>
-   &nbsp;&nbsp;&nbsp;
-  <a href="https://www.npmjs.com/package/web3">
-    <img src="https://github.com/rishav4101/eth-supplychain-dapp/blob/main/images/web3.jpg" width="60">
-  </a>
-  
-  <a href="https://material-ui.com/">
-    <img src="https://github.com/rishav4101/eth-supplychain-dapp/blob/main/images/mat.png" width="60">       
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://expressjs.com/"><img src="https://github.com/rishav4101/eth-supplychain-dapp/blob/main/images/express.svg" width="50"></a>
-  &nbsp;&nbsp;
-  <a href="https://www.nginx.com/">
-    <img src="https://github.com/rishav4101/eth-supplychain-dapp/blob/main/images/nginx.png" width="80">
-  </a>
-</p>
 
 <h4 align="center">A simple Supply Chain setup with <a href="https://docs.soliditylang.org/en/v0.8.4/" target="_blank">Solidity</a>.</h4>
 
