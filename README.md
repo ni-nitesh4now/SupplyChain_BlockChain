@@ -1,3 +1,4 @@
+
 <h1 align="center">
   <br>
   <a><img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/logo.png" width="200"></a>
@@ -5,9 +6,8 @@
   Supply-Chain
   <br>
 </h1>
-<h3  align="center"><br>Uniting Efficiency and Transparency<br></h3>
+<h3 align="center"><br>Enhancing Efficiency and Transparency through Blockchain</h3>
 <p align="center">
-  
   <a href="https://github.com/trufflesuite/ganache-cli">
     <img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/ganachetrans.png" width="90">
   </a>
@@ -15,7 +15,6 @@
     <img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/Solidity.svg" width="80">       
   </a>
   <a href="https://reactjs.org/"><img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/react.png" width="80"></a>
-  
   <a href="https://www.trufflesuite.com/">
     <img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/trufflenew.png" width="50">
   </a>
@@ -23,7 +22,6 @@
   <a href="https://www.npmjs.com/package/web3">
     <img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/web3.jpg" width="60">
   </a>
-  
   <a href="https://material-ui.com/">
     <img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/mat.png" width="60">       
   </a>
@@ -35,8 +33,7 @@
   </a>
 </p>
 
-<h4 align="center">A simple Supply Chain setup with <a href="https://docs.soliditylang.org/en/v0.8.4/" target="_blank">Solidity</a>.</h4>
-
+<h4 align="center">Revolutionizing Supply Chain Management with <a href="https://docs.soliditylang.org/en/v0.8.4/" target="_blank">Solidity</a>.</h4>
 
 <p align="center">
   <a href="#description">Description</a> •
@@ -50,20 +47,19 @@
 
 ## Description
 
-Supply chain is always hard to manage and requires a lot of admistrative machinery. However, when managed with smart contracts using blockchain, a lot of the paperwork is reduced.
-Also it leads to an increase in the transparency and helps to build an efficient Root of Trust. Supply-chain-dapp is such an implementation of a supply chain management system which uses blockchain to ensure a transparent and secure transfer of product from the manufacturer to the customer via the online e-commerce websites.
+Simplifying supply chain management by leveraging blockchain technology to reduce paperwork, enhance transparency, and establish a robust Root of Trust. The Supply-Chain DApp facilitates transparent and secure product transfers from manufacturers to customers through online e-commerce platforms.
 
 ## Architecture
 
-The smart contract is being written with Solidity which is then compiled, migrated and deployed using Truffle.js on the local blockchain network created using Ganache-cli.The frontend uses Web3.js to communicate with the smart contract and local blockchain network and is written using React.js framework for better component and state lifecycle management.The requests from user are forwarded to frontend through Nginx(load balancer) and Express.js for dynamic routing.
+The smart contract, coded in Solidity, is compiled, migrated, and deployed using Truffle.js on a local blockchain network powered by Ganache-cli. The frontend employs Web3.js to interact with the smart contract and local blockchain. React.js is used for efficient component and state lifecycle management. Nginx serves as a load balancer, and Express.js handles dynamic routing for user requests.
 
-<p align="centre">  
+<p align="center">  
     <img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/architecturefinal.png?raw=true" >  
 </p>
 
 ## Flow
 
-<p align="centre">  
+<p align="center">  
     <img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/flow.png" width="300">  
 </p>
 
@@ -73,48 +69,56 @@ The smart contract is being written with Solidity which is then compiled, migrat
 <img src="https://user-images.githubusercontent.com/55195287/124394171-d4dc6080-dd1b-11eb-87b2-127daa32481a.png" />
 
 <p>
-  The lifecycle of a product starts when <strong>manufactureProduct()</strong> is called(while making an entry) after the final product is manufactured and the product and manufacturer details are entered in the blockchain. The <strong>productHistory[]</strong> gets initialized and the current product data is stored with the current owner(manufacturer).
+  The lifecycle of a product begins with the <strong>manufactureProduct()</strong> call, recording the final product's details into the blockchain. The <strong>productHistory[]</strong> initializes, and the current product data is associated with the manufacturer as the owner.
 </p>
 <p>
-  Now this product shall be available to the Third Party for purchase. On being purchased by a third party seller, the <strong>purchasedByThirdParty()</strong> gets called where the owner is set to thirdParty and the present data gets pushed to the <strong>productHistory[]</strong> (which helps us to track the origin and handling of the product). Simultaneously, the product is shipped by the manufacturer (<strong>shipToThirdParty()</strong>) and is received by the Third Party where <strong>receivedByThirdParty()</strong> is called and the details of the Third Party seller are entered. Each of these checkpoint's data is stored in product history with the state being updated at each step. 
+  The product is then available for purchase by a Third Party. Upon purchase, <strong>purchasedByThirdParty()</strong> is invoked, changing ownership to the Third Party and storing the current data in <strong>productHistory[]</strong> to track the product's journey. The manufacturer ships the product (<strong>shipToThirdParty()</strong>), and upon Third Party receipt (<strong>receivedByThirdParty()</strong>), Third Party details are added. Each checkpoint's data is stored in product history, updating the state.
 </p>
 <p>
-  The online purchase of the product takes place from the Third Party. When the customer orders the product, it is shipped by the Third Party (<strong>shipByThirdParty()</strong>) and received by the delivery hub where the <strong>receivedByDeliveryHub()</strong> is called. Here the customer address is stored, owner is set to Delivery Hub, details of the Delivery Hub are fed and the current data state gets pushed to the <strong>productHistory[].</strong>
+  Customers buy the product online from the Third Party. When the customer orders, the Third Party ships the product (<strong>shipByThirdParty()</strong>), and upon receipt by the delivery hub (<strong>receivedByDeliveryHub()</strong>), Delivery Hub details are logged, and data is pushed to <strong>productHistory[]</strong>.
 </p>
 <p>
-  Finally the product is shipped by the Delivery Hub (<strong>shipByDeliveryHub()</strong>) and received by the customer where the <strong>receivedByCustomer()</strong> is called and the current and final state gets pushed to the <strong>productHistory[]</strong>.
+  Finally, the Delivery Hub ships the product (<strong>shipByDeliveryHub()</strong>), and upon customer receipt (<strong>receivedByCustomer()</strong>), the final state is pushed to <strong>productHistory[]</strong>.
 </p>
 <p>
-  All of these juncture functions shall be called only after complete verification of product and <strong>productHistory[]</strong> while entering a checkpoint. (eg:- Customer accepts and confirms the product by clicking the receive button from his account only after it verifies the product). 
+  Each checkpoint function is called after thorough product and <strong>productHistory[]</strong> verification (e.g., Customer confirms receipt only after verifying the product). 
 </p>
 <p>
-  <strong>fetchProductPart1()</strong>, <strong>fetchProductPart2()</strong>, <strong>fetchProductPart3()</strong>, <strong>fetchProductHistoryLength()</strong>, <strong>fetchProductCount()</strong>, <strong>fetchProductState()</strong> are the functions to retreive data of a product queried with UID and data type as product(current state) or history.
+  Functions like <strong>fetchProductPart1()</strong>, <strong>fetchProductPart2()</strong>, <strong>fetchProductPart3()</strong>, <strong>fetchProductHistoryLength()</strong>, <strong>fetchProductCount()</strong>, and <strong>fetchProductState()</strong> retrieve product data queried by UID and data type (product or history).
 </p>
 <p>
-  The hashes(read certificates) are generated using the Solidity cryptographic function <strong>keccak256()</strong> which implements a SHA-3 hash in the blockchain setup. <strong>keccak256()</strong> generates a secure 256-bit hash which is the main basis of security in the entire mainnet apart from the smart contracts being immutable. In our supply chain setup certificates are generated at every stage of shipping of the product. 
+  Secure hashes (certificates) are generated using Solidity's <strong>keccak256()</strong> cryptographic function, providing SHA-3 hashes for security. Certificates are generated at each shipping stage.
 </p>
 
 ## Contract Diagrams
 
 ### Activity Diagram
 
-The overall flow of the project is described as follows.
+The project's overall flow is depicted below.
 
-<p align="centre">
+<p align="center">
   <a>
     <img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/activitydiagram.png?raw=true" >
   </a>
 </p>
+
 <h3> Sequence Diagram</h3>
-The flow of the functions in the smart contracts.
-<p align="centre">
+
+The flow of functions in the smart contracts.
+
+<p align="center">
   <a>
-    <img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/sequencediagram.png?raw=true" width="1000">
+    <img src
+
+="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/sequencediagram.png?raw=true" width="1000">
   </a>
 </p>
+
 <h3> Data Flow Diagram </h3>
-The entire structure of the code.
-<p align="centre">
+
+The code's comprehensive structure.
+
+<p align="center">
   <a>
     <img src="https://github.com/ni-nitesh4now/SupplyChain_BlockChain/blob/main/images/dataflow.png?raw=true">
   </a>
@@ -122,7 +126,7 @@ The entire structure of the code.
 
 ## Installation and Setup
 
-Prerequisites : `npm, git, docker(optional)`
+Prerequisites: `npm, git, docker (optional)`
 
 Clone the repository
 
@@ -133,22 +137,22 @@ git clone https://github.com/Jarvis-AI007/supply-chain.git
 Install dependencies
 
 ```Bash
-npm i
+npm install
 ```
 
 Install ganache-cli
 
 ```Bash
-npm i -g ganache-cli
+npm install -g ganache-cli
 ```
 
-Configure ganache-cli for 10 accounts and extend gasLimit to 6721975000 and beyond, so as to have enough gas for migrating the smart contracts and a data flow for the prototype.
+Configure ganache-cli for 10 accounts and extend gasLimit to 6721975000 and beyond to ensure sufficient gas for smart contract migration and prototype data flow.
 
 ```Bash
 ganache-cli --accounts 10 --gasLimit 6721975000
 ```
 
-If you want to run the ganache-cli on docker then use the following command
+For running ganache-cli in Docker, use the following command
 
 ```Bash
 sudo docker run -d -p 8545:8545 trufflesuite/ganache-cli:latest -h 0.0.0.0 --accounts 10 --gasLimit 6721975000
@@ -160,25 +164,23 @@ Migrate the contracts
 truffle migrate --network=develop --reset
 ```
 
-Open a second terminal and enter the client folder
+Navigate to the client folder in a new terminal
 
 ```Bash
 cd client
 ```
 
-Install all packages in the package.json file
+Install packages from the package.json file
 
 ```Bash
-npm i
+npm install
 ```
 
-Setup an .env file using the `nano .env` command and enter the google maps api key and set the react rpc port to 8545 since the ganache-cli runs on the same port by default.
-The final .env file must look like this
+Create an .env file using `nano .env` and enter your Google Maps API key. Set the React RPC port to 8545, which matches the ganache-cli default port.
 
 ```Bash
 REACT_APP_GOOGLE_MAP_API_KEY=*************************
 REACT_APP_RPC=http://127.0.0.1:8545/
-
 ```
 
 Run the app
@@ -187,24 +189,4 @@ Run the app
 npm start
 ```
 
-The app gets hosted by default at port 3000.
-
-## License
-
-This project uses an [MIT](https://opensource.org/licenses/MIT) license.
-
-## Documentation to help with Solidity
-
-https://docs.soliditylang.org/en/v0.8.4/
-
-## Documentation to help with React
-
-https://reactjs.org/docs/getting-started.html
-
-## Documentation to help with Truffle
-
-https://www.trufflesuite.com/docs/truffle/reference/configuration
-
-## Documentation to help with Ganache-cli
-
-https://www.trufflesuite.com/docs/ganache/overview
+The app is hosted on port 3000 by default.
