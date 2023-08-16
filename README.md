@@ -31,8 +31,6 @@
   </a>
 </p>
 
-<h4 align="center">Revolutionizing Supply Chain Management with <a href="https://docs.soliditylang.org/en/v0.8.4/" target="_blank">Solidity</a>.</h4>
-
 <p align="center">
   <a href="#description">Description</a> •
   <a href="#architecture">Architecture</a> •
