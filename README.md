@@ -189,7 +189,7 @@ npm start
 
 The app is hosted on port 3000 by default.
 
-
+## Steps
 Here are the steps in detail:
 <p><strong>Manufacturing and Initial Recording:</strong> The product's journey commences with the recording of its details in the blockchain, associating it with the manufacturer.</p>
 
