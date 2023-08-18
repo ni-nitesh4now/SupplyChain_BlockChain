@@ -188,3 +188,18 @@ npm start
 ```
 
 The app is hosted on port 3000 by default.
+
+
+Here are the steps in detail:
+<p><strong>Manufacturing and Initial Recording:</strong> The product's journey commences with the recording of its details in the blockchain, associating it with the manufacturer.</p>
+
+<p><strong>Third Party Purchase:</strong> Products are made available for purchase by Third Parties, leading to a change in ownership and initiation of the shipping process.</p>
+
+<p><strong>Third Party Involvement:</strong> Upon receiving the product, Third Parties contribute their information to the journey history, creating checkpoints.</p>
+
+<p><strong>Customer Purchase and Shipping:</strong> Customers buy products online from Third Parties. Upon purchase, shipping is activated, and the product continues its journey.</p>
+
+<p><strong>Final Delivery and Receipt:</strong> The product reaches its final destination with the Delivery Hub's involvement. Upon customer receipt, the journey concludes.</p>
+
+<p><strong>Verification and Retrieval:</strong> Each checkpoint is validated before proceeding. Information about the product's journey can be accessed.</p>
+
