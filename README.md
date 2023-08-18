@@ -117,7 +117,7 @@ The code's comprehensive structure.
 
 ## Installation and Setup
 
-Prerequisites: `npm, git, docker (optional)`
+Prerequisites: `npm, git, docker (optional), node v16`
 
 Clone the repository
 
@@ -151,7 +151,11 @@ For running ganache-cli in Docker, use the following command
 ```Bash
 sudo docker run -d -p 8545:8545 trufflesuite/ganache-cli:latest -h 0.0.0.0 --accounts 10 --gasLimit 6721975000
 ```
-
+Open a second terminal
+Run the command
+```Bash
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
 Migrate the contracts
 
 ```Bash
