@@ -146,12 +146,12 @@ Configure ganache-cli for 10 accounts and extend gasLimit to 6721975000 and beyo
 ganache-cli --accounts 10 --gasLimit 6721975000
 ```
 
-For running ganache-cli in Docker, use the following command
+For running ganache-cli in Docker, use the following command (Optional)
 
 ```Bash
 sudo docker run -d -p 8545:8545 trufflesuite/ganache-cli:latest -h 0.0.0.0 --accounts 10 --gasLimit 6721975000
 ```
-Open a second terminal
+Open a second terminal and
 Run the command
 ```Bash
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
