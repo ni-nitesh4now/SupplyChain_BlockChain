@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
   },
   appBar: {
-    backgroundColor: "#0066c0", 
+    backgroundColor: "#5C2D91", 
     transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: "#09126d", 
+    backgroundColor: "#5C2D91", 
     color: "#fff",
   },
   drawerHeader: {
@@ -118,9 +118,8 @@ export default function PersistentDrawerLeft({ pageTitle, navItems, children }) 
             <img
               alt="."
               src="/logo.png"
-              style={{ height: "45px", width: "auto" }}
+              style={{ height: "100px", width: "auto" }}
             />
-            &nbsp;SupplyChain-Dapp
           </Typography>
         </Toolbar>
       </AppBar>
@@ -191,10 +190,9 @@ export default function PersistentDrawerLeft({ pageTitle, navItems, children }) 
               borderTop: "1px solid #44a",
             }}
           >
-            By Team Akatsuki &nbsp;&nbsp;
             <a
               style={{ textDecoration: "none" }}
-              href="https://github.com/rishav4101/eth-supplychain-dapp"
+              href="#"
             >
               <GitHubIcon style={{ color: "#fff" }} />
             </a>

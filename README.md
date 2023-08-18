@@ -136,6 +136,9 @@ Install ganache-cli
 ```Bash
 npm install -g ganache-cli
 ```
+```Bash
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
 
 Configure ganache-cli for 10 accounts and extend gasLimit to 6721975000 and beyond to ensure sufficient gas for smart contract migration and prototype data flow.
 

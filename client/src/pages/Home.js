@@ -23,11 +23,13 @@ export default function Home() {
               xs={12}
               sm={6}
               className={classes.ExplorerGrid}
+              style={{ height: "80vh", width: "85vw", overflowx:"hidden" }}
             >
               <img
                 alt="."
                 src="/homeArt.png"
                 className={classes.ExplorerImage}
+                style={{ height: "85vh", width: "85vw"}}
               />
             </Grid>
 
