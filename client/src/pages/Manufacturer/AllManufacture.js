@@ -24,6 +24,7 @@ export default function AllManufacture(props) {
     ["Ship Product", "/manufacturer/ship"],
     ["All Products", "/manufacturer/allManufacture"],
   ];
+
   React.useEffect(() => {
     setLoading(true);
     (async () => {
@@ -84,7 +85,7 @@ export default function AllManufacture(props) {
   };
 
   return (
-    <div classname={classes.pageWrap}>
+    <div className={classes.pageWrap}>
       <Navbar pageTitle={"Manufacturer"} navItems={navItem}>
         {loading ? (
           <Loader />

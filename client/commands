@@ -1,0 +1,7 @@
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+ganache-cli --accounts 10 --gasLimit 6721975000
+
+
+truffle migrate --network=develop --reset
+cd client
+npm start
